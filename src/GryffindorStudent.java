@@ -43,16 +43,13 @@ public class GryffindorStudent extends HogwartsStudent{
         if (sumOfProperties1>sumOfProperties2){
             System.out.print("Гриффиндорец " + getName() + " лучше гриффендорца " + gryffindorStudent.getName() + " ");
         } else if (sumOfProperties1 < sumOfProperties2){
-            System.out.print("Гриффиндорец" + gryffindorStudent.getName() + "лучше гриффендорца" + getName() + " ");
+            System.out.print("Гриффиндорец " + gryffindorStudent.getName() + " лучше гриффендорца" + getName() + " ");
         } else {
-            System.out.print("Гриффиндорец" + getName() + " равен гриффендорцу" + gryffindorStudent.getName() + " ");
+            System.out.print("Гриффиндорец " + getName() + " равен гриффендорцу" + gryffindorStudent.getName() + " ");
         }
     }
     @Override
     public String toString() {
-        return "Гриффиндорец";
-        super(toString());
+        return "Студент" + getName() + ", magicPower=" + getMagicPower() + ", transgressionDistance=" + getTransgressionDistance();
     }
-
-
 }

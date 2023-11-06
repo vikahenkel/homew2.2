@@ -66,14 +66,14 @@ public class SlytherinStudent extends HogwartsStudent{
         if (sumOfProperties1>sumOfProperties2){
             System.out.println("Слизеринец " + getName() + " лучше cлизеринца " + slytherinStudent.getName() + " ");
         } else if (sumOfProperties1 < sumOfProperties2){
-            System.out.println("Слизеринец" + slytherinStudent.getName() + "лучше cлизеринца" + getName() + " ");
+            System.out.println("Слизеринец " + slytherinStudent.getName() + " лучше cлизеринца " + getName() + " ");
         } else {
-            System.out.println("Слизеринец" + getName() + " равен cлизеринцу" + slytherinStudent.getName() + " ");
+            System.out.println("Слизеринец " + getName() + " равен cлизеринцу " + slytherinStudent.getName() + " ");
         }
     }
+    @Override
     public String toString() {
-        return "Слизеринец";
-        super(toString());
+        return "Студент " + getName() + ", magicPower= " + getMagicPower() + ", transgressionDistance= " + getTransgressionDistance();
     }
 }
 

@@ -1,4 +1,4 @@
-public class HufflepuffStudent extends HogwartsStudent{
+public class HufflepuffStudent extends HogwartsStudent {
 
     private int industriousness;
     private int loyalty;
@@ -34,23 +34,25 @@ public class HufflepuffStudent extends HogwartsStudent{
     public void setHonesty(int honesty) {
         this.honesty = honesty;
     }
+
     private int sumOfProperties() {
         return industriousness + loyalty + honesty;
     }
-    public void compareStudents (HufflepuffStudent hufflepuffStudent){
+
+    public void compareStudents(HufflepuffStudent hufflepuffStudent) {
         int sumOfProperties1 = sumOfProperties();
         int sumOfProperties2 = hufflepuffStudent.sumOfProperties();
-        if (sumOfProperties1>sumOfProperties2){
+        if (sumOfProperties1 > sumOfProperties2) {
             System.out.println("Пуффендуец " + getName() + " лучше пуффендуйца " + hufflepuffStudent.getName() + " ");
-        } else if (sumOfProperties1 < sumOfProperties2){
-            System.out.println("Пуффендуец" + hufflepuffStudent.getName() + "лучше пуффендуйца" + getName() + " ");
+        } else if (sumOfProperties1 < sumOfProperties2) {
+            System.out.println("Пуффендуец " + hufflepuffStudent.getName() + " лучше пуффендуйца " + getName() + " ");
         } else {
-            System.out.println("Пуффендуец" + getName() + " равен пуффендуйцу" + hufflepuffStudent.getName() + " ");
+            System.out.println("Пуффендуец " + getName() + " равен пуффендуйцу " + hufflepuffStudent.getName() + " ");
         }
     }
+
+    @Override
     public String toString() {
-        return "Пуффендуец";
-        super(toString());
+        return "Студент" + getName() + ", magicPower=" + getMagicPower() + ", transgressionDistance=" + getTransgressionDistance();
     }
 }
-

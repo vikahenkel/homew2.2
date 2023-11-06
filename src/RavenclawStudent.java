@@ -52,14 +52,14 @@ public class RavenclawStudent extends HogwartsStudent{
         if (sumOfProperties1>sumOfProperties2){
             System.out.println("Когтевранец " + getName() + " лучше когтевранца " + ravenclawStudent.getName() + " ");
         } else if (sumOfProperties1 < sumOfProperties2){
-            System.out.println("Когтевранец" + ravenclawStudent.getName() + "лучше когтевранца" + getName() + " ");
+            System.out.println("Когтевранец " + ravenclawStudent.getName() + " лучше когтевранца " + getName() + " ");
         } else {
-            System.out.println("Когтевранец" + getName() + " равен когтевранцу" + ravenclawStudent.getName() + " ");
+            System.out.println("Когтевранец " + getName() + " равен когтевранцу " + ravenclawStudent.getName() + " ");
         }
     }
+    @Override
     public String toString() {
-        return "Когтевранец";
-        super(toString());
+        return "Студент " + getName() + ", magicPower= " + getMagicPower() + ", transgressionDistance= " + getTransgressionDistance();
     }
 }
 
