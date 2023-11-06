@@ -52,6 +52,6 @@ public abstract class HogwartsStudent {
 
     @Override
     public String toString() {
-        return "Студент " + name + ", magicPower= " + magicPower + ", transgressionDistance= " + transgressionDistance;
+        return "Студент  " + name + ", magicPower= " + magicPower + ", transgressionDistance= " + transgressionDistance;
     }
 }
