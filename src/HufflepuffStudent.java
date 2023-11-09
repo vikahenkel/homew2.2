@@ -53,6 +53,6 @@ public class HufflepuffStudent extends HogwartsStudent {
 
     @Override
     public String toString() {
-        return "Студент" + getName() + ", magicPower= " + getMagicPower() + ", transgressionDistance= " + getTransgressionDistance();
+        return(super.toString() + " трудолюбивы- " + industriousness + ", верны- " + loyalty + ",честны- " + honesty);
     }
 }

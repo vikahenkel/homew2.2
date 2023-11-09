@@ -59,7 +59,7 @@ public class RavenclawStudent extends HogwartsStudent{
     }
     @Override
     public String toString() {
-        return "Студент" + getName() + ", magicPower= " + getMagicPower() + ", transgressionDistance= " + getTransgressionDistance();
+        return (super.toString() + " умны- " + smart + ", мудры- " + wise + ", остроумны- " + wit + ", полны творчества- " + creativity);
     }
 }
 

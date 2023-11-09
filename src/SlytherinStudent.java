@@ -73,7 +73,7 @@ public class SlytherinStudent extends HogwartsStudent{
     }
     @Override
     public String toString() {
-        return "Студент" + getName() + ", magicPower= " + getMagicPower() + ", transgressionDistance= " + getTransgressionDistance();
+        return (super.toString() + " хитрость- " + cunning + ", решительность- " + determination + ", амбициозность- " + ambition+ ", находчивость- " + resourceful + ", жажда власти- " + thirstForPower);
     }
 }
 

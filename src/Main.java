@@ -21,8 +21,14 @@ public class Main {
         SlytherinStudent padma = generateSlytherinStudent("Падма Патил");
         SlytherinStudent marcus = generateSlytherinStudent("Маркус Белби");
 
+        harry.print();
+        marcus.print();
+        draco.print();
+        zaharia.print();
+        harry.compareStudents(ron);
         draco.compareStudents(gregory);
         zaharia.compareStudents(justin);
+        marcus.compareStudents(zhou);
 
 
     }

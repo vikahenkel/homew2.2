@@ -50,6 +50,6 @@ public class GryffindorStudent extends HogwartsStudent{
     }
     @Override
     public String toString() {
-        return "Студент" + getName() + ", magicPower= " + getMagicPower() + ", transgressionDistance= " + getTransgressionDistance();
+        return(super.toString() + " благородство- " + nobility + ", честь- " + honor + ", храбрость- " + bravery);
     }
 }

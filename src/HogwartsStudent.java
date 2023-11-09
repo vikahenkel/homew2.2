@@ -1,3 +1,5 @@
+import java.util.Formatter;
+
 public abstract class HogwartsStudent {
     private String name;
     private int magicPower;
@@ -42,16 +44,17 @@ public abstract class HogwartsStudent {
         int sumOfProperties1 = sumOfProperties();
         int sumOfProperties2 = hogwartsStudent.sumOfProperties();
         if (sumOfProperties1>sumOfProperties2){
-            System.out.println("Студент " + name + " лучше студента" + hogwartsStudent.name + " ");
+            System.out.println("Студент " + name + " лучше студента " + hogwartsStudent.name + "" +
+                    " ");
         } else if (sumOfProperties1 < sumOfProperties2){
-                System.out.println("Студент " + hogwartsStudent.name + " лучше студента" + name + " ");
+                System.out.println("Студент " + hogwartsStudent.name + " лучше студента " + name + " ");
         } else {
-            System.out.println("Студент " + name + " равен студенту" + hogwartsStudent.name + " ");
+            System.out.println("Студент " + name + " равен студенту " + hogwartsStudent.name + " ");
         }
     }
 
     @Override
     public String toString() {
-        return "Студент  " + name + ", magicPower= " + magicPower + ", transgressionDistance= " + transgressionDistance;
+        return  " Студент " + name + ", сила магии= " + magicPower + ", сила трансгессии= " + transgressionDistance;
     }
 }
